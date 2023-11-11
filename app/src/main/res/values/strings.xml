@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mascotas</string>
+    <string name="registrar_mascotas">Registrar Mascotas</string>
+    <string name="introduzca_id_mascota">Introduzca ID Mascota</string>
+    <string name="nombre">Nombre:</string>
+    <string name="introduzca_raza_mascota">Introduzca Raza Mascota</string>
+    <string name="ingrese_nombre_de_la_mascota">Ingrese Nombre de la Mascota</string>
+    <string name="raza">Raza:</string>
+    <string name="edad">Edad:</string>
+    <string name="introduzca_edad_mascota">Introduzca Edad Mascota</string>
+    <string name="registrar_mascota">Registrar Mascota</string>
+    <string name="id">ID:</string>
+</resources>

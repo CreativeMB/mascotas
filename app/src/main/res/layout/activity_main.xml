@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#073E7A"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgfondo" />
+
+    <TextView
+        android:id="@+id/texw_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/id"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tex_titulo" />
+
+    <TextView
+        android:id="@+id/tex_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/registrar_mascotas"
+        android:textColor="#192D9D"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/introduzca_id_mascota"
+        app:layout_constraintStart_toEndOf="@id/texw_id"
+        app:layout_constraintTop_toBottomOf="@id/tex_titulo" />
+
+    <TextView
+        android:id="@+id/texw_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nombre"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texw_id" />
+
+    <EditText
+        android:id="@+id/edt_nombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_nombre_de_la_mascota"
+        app:layout_constraintStart_toEndOf="@id/texw_nombre"
+        app:layout_constraintTop_toBottomOf="@id/edt_id" />
+
+    <TextView
+        android:id="@+id/texw_raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/raza"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texw_nombre" />
+
+     <EditText
+        android:id="@+id/edt_raza"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/introduzca_raza_mascota"
+        app:layout_constraintStart_toEndOf="@id/texw_raza"
+        app:layout_constraintTop_toBottomOf="@id/edt_nombre" />
+
+    <TextView
+        android:id="@+id/texw_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/edad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texw_raza" />
+
+    <EditText
+        android:id="@+id/edt_edad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/introduzca_edad_mascota"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/texw_raza"
+        app:layout_constraintTop_toBottomOf="@id/edt_raza" />
+
+    <Button
+        android:id="@+id/But_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar_mascota"
+        android:textSize="28sp"
+        app:cornerRadius="5dp"
+        android:backgroundTint="#192D9D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texw_edad"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ScrollView
+        android:id="@+id/scroll_mascotas"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/But_registro"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="#263D6A"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texw_Mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/but_mostrar_mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E2DD8"
+        android:text="Mostrar Mascotas"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/scroll_mascotas"
+        tools:layout_editor_absoluteX="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
